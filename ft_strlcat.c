@@ -40,8 +40,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 
 int main(void)
 {
-	char	dst[30] = "Minecraft ";
-	char	src[] = "Survival";
+	char	dst[30] = "Voiture ";
+	char	src[] = "VroumVroum";
 	size_t	ret;
 
 	ret = ft_strlcat(dst, src, sizeof(dst));
