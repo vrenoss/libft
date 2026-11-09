@@ -6,7 +6,7 @@
 /*   By: rpaganon <rpaganon@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 11:29:32 by rpaganon          #+#    #+#             */
-/*   Updated: 2026/11/06 11:52:44 by rpaganon         ###   ########lyon.fr   */
+/*   Updated: 2026/11/09 16:21:25 by rpaganon         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void	*ptr;
 
+	if (size != 0 && nmemb > (size_t)-1 / size)
+		return (NULL);
 	ptr = (void *)malloc(nmemb * size);
 	if (!ptr)
 		return (NULL);
