@@ -6,7 +6,7 @@
 /*   By: rpaganon <rpaganon@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 14:18:24 by rpaganon          #+#    #+#             */
-/*   Updated: 2026/11/06 15:41:33 by rpaganon         ###   ########lyon.fr   */
+/*   Updated: 2026/11/10 14:59:59 by rpaganon         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (NULL);
 	return (dest);
 }
+
+/*
+int main(void)
+{
+	char const	tab[] = "oui je sais que";
+	printf("Result : %s", ft_substr(tab, 5, 50));
+}
+*/
