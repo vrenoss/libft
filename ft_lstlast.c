@@ -6,7 +6,7 @@
 /*   By: rpaganon <rpaganon@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 15:04:58 by rpaganon          #+#    #+#             */
-/*   Updated: 2026/11/10 17:08:04 by rpaganon         ###   ########lyon.fr   */
+/*   Updated: 2026/11/12 14:50:43 by rpaganon         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_list	*ft_lstlast(t_list *lst)
 {
 	if (!lst)
 		return (NULL);
-	while(lst->next)
+	while (lst->next)
 		lst = lst->next;
 	return (lst);
 }
