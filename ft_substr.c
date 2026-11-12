@@ -6,11 +6,12 @@
 /*   By: rpaganon <rpaganon@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 14:18:24 by rpaganon          #+#    #+#             */
-/*   Updated: 2026/11/10 14:59:59 by rpaganon         ###   ########lyon.fr   */
+/*   Updated: 2026/11/12 18:54:17 by rpaganon         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stddef.h>
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {

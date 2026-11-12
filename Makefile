@@ -1,6 +1,5 @@
 
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -MD -MP 
 NAME = libft.a
 
 SRCS := ft_atoi.c \
@@ -48,8 +47,11 @@ SRCS := ft_atoi.c \
         ft_striteri.c
 
 OBJS = $(SRCS:.c=.o)
+DEPS = $(OBJS:.o=.d)
+
 
 all: $(NAME)
+
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
@@ -61,8 +63,10 @@ clean:
 	rm -f $(OBJS)
 
 fclean: clean
-	rm -f $(NAME)
+	rm -f $(NAME) $(DEPS)
 
 re: fclean all
 
 .PHONY: all clean fclean re
+
+-include $(DEPS)

@@ -6,11 +6,11 @@
 /*   By: rpaganon <rpaganon@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 11:20:14 by rpaganon          #+#    #+#             */
-/*   Updated: 2026/11/10 11:30:07 by rpaganon         ###   ########lyon.fr   */
+/*   Updated: 2026/11/12 18:49:37 by rpaganon         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <unistd.h>
 
 void	ft_putchar_fd(char c, int fd)
 {

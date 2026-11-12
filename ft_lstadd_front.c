@@ -6,7 +6,7 @@
 /*   By: rpaganon <rpaganon@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/10 13:45:31 by rpaganon          #+#    #+#             */
-/*   Updated: 2026/11/10 17:21:28 by rpaganon         ###   ########lyon.fr   */
+/*   Updated: 2026/11/12 17:53:54 by rpaganon         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,8 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	new->next = *lst;
 	*lst = new;
 }
+
+// int main()
+// {
+// 	ft_lstadd_front((void*)4546451, (void*)134564);
+// }

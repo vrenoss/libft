@@ -6,10 +6,12 @@
 /*   By: rpaganon <rpaganon@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 11:29:32 by rpaganon          #+#    #+#             */
-/*   Updated: 2026/11/09 16:21:25 by rpaganon         ###   ########lyon.fr   */
+/*   Updated: 2026/11/12 18:55:06 by rpaganon         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+#include <stddef.h>
 #include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)

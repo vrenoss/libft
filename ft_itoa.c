@@ -6,16 +6,16 @@
 /*   By: rpaganon <rpaganon@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 14:16:30 by rpaganon          #+#    #+#             */
-/*   Updated: 2026/11/09 15:26:44 by rpaganon         ###   ########lyon.fr   */
+/*   Updated: 2026/11/12 18:56:10 by rpaganon         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
 
-int	num_size(int n)
+size_t	num_size(int n)
 {
-	int			size;
+	size_t		size;
 	long int	nb;
 
 	nb = n;
@@ -48,7 +48,7 @@ char	*ft_itoa(int n)
 {
 	long int	nb;
 	char		*dest;
-	int			size;
+	size_t		size;
 	int			sign;
 
 	nb = n;
@@ -62,9 +62,7 @@ char	*ft_itoa(int n)
 		nb = nb * sign;
 	while (nb > 9)
 	{
-		printf("h%dh", num_size(nb) - 2 + invert(sign));
 		dest[num_size(nb) - 2 + invert(sign)] = '0' + (nb % 10);
-		printf("|%ld|\n", nb);
 		nb /= 10;
 	}
 	dest[invert(sign) - 1] = '0' + (nb % 10);

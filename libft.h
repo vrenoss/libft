@@ -6,7 +6,7 @@
 /*   By: rpaganon <rpaganon@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/05 17:35:07 by rpaganon          #+#    #+#             */
-/*   Updated: 2026/11/12 16:08:48 by rpaganon         ###   ########lyon.fr   */
+/*   Updated: 2026/11/12 19:27:50 by rpaganon         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 # define LIBFT_H
 
 # include <stddef.h>
-# include <stdlib.h>
-# include <unistd.h>
 
 typedef struct s_list
 {
@@ -23,7 +21,7 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
-//Les fonctions de la part 1
+//part 1
 int				ft_isalpha(char c);
 int				ft_isdigit(char c);
 int				ft_isalnum(char c);
@@ -48,7 +46,7 @@ void			ft_bzero(void *s, size_t n);
 size_t			ft_strlen(const char *s);
 size_t			ft_strlcpy(char *dst, const char *src, size_t size);
 size_t			ft_strlcat(char *dst, const char *src, size_t size);
-//Les fonctions de la part 2
+//part 2
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_strtrim(char const *s1, char const *set);
@@ -60,7 +58,7 @@ void			ft_putchar_fd(char c, int fd);
 void			ft_putstr_fd(char *s, int fd);
 void			ft_putendl_fd(char *s, int fd);
 void			ft_putnbr_fd(int n, int fd);
-//Les fonctions de la part 3
+//part 3
 void			ft_lstadd_front(t_list **lst, t_list *new);
 void			ft_lstadd_back(t_list **lst, t_list *new);
 void			ft_lstdelone(t_list *lst, void (*del)(void *));

@@ -6,11 +6,13 @@
 /*   By: rpaganon <rpaganon@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 16:00:28 by rpaganon          #+#    #+#             */
-/*   Updated: 2026/11/10 15:19:57 by rpaganon         ###   ########lyon.fr   */
+/*   Updated: 2026/11/12 18:52:47 by rpaganon         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
+#include <stddef.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

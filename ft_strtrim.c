@@ -6,11 +6,13 @@
 /*   By: rpaganon <rpaganon@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/08 17:11:38 by rpaganon          #+#    #+#             */
-/*   Updated: 2026/11/08 18:08:14 by rpaganon         ###   ########lyon.fr   */
+/*   Updated: 2026/11/12 18:54:09 by rpaganon         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stddef.h>
+#include <stdlib.h>
 
 int	incharset(char s, char const *set)
 {

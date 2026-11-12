@@ -6,16 +6,18 @@
 /*   By: rpaganon <rpaganon@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/09 11:25:20 by rpaganon          #+#    #+#             */
-/*   Updated: 2026/11/10 16:37:10 by rpaganon         ###   ########lyon.fr   */
+/*   Updated: 2026/11/12 18:50:31 by rpaganon         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+#include <stdlib.h>
 #include "libft.h"
 
-int	word_count(char const *s, char c)
+size_t	word_count(char const *s, char c)
 {
-	int	i;
-	int	word;
+	size_t	i;
+	size_t	word;
 
 	i = 0;
 	word = 0;
@@ -47,9 +49,9 @@ int	free_dest(int word, char **dest)
 
 char	**split_section(char const *s, char c, char **dest)
 {
-	int	i;
-	int	j;
-	int	word;
+	size_t	i;
+	size_t	j;
+	size_t	word;
 
 	i = 0;
 	word = 0;

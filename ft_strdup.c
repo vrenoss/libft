@@ -6,10 +6,12 @@
 /*   By: rpaganon <rpaganon@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/06 11:55:59 by rpaganon          #+#    #+#             */
-/*   Updated: 2026/11/06 12:21:18 by rpaganon         ###   ########lyon.fr   */
+/*   Updated: 2026/11/12 18:51:24 by rpaganon         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stddef.h>
+#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strdup(char *src)
